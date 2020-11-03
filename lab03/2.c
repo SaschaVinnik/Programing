@@ -6,9 +6,9 @@ int main()
  int second_numeral;//Десятки
  int third_numeral; //Сотни
  int reverse_Value;
- first_numeral = Value % 10;
- second_numeral = (Value % 100 ) / 10;
- third_numeral = Value / 100;
+ first_numeral = Value0 % 10;
+ second_numeral = (Value0 % 100 ) / 10;
+ third_numeral = Value0 / 100;
  reverse_Value = first_numeral * 100 + second_numeral * 10 + third_numeral;
  return 0;
 }
