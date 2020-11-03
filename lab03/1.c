@@ -7,6 +7,6 @@ int main()
  float reverse_R;
  float R;
  reverse_R= (1/R1)+(1/R2)+(1/R3);
- R = 1 / R;
+ R = 1 / reverse_R ;
 return 0;
 }
