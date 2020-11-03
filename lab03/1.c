@@ -6,7 +6,7 @@ int main()
  #define R3 3.4 //3 сопротивление
  float reverse_R;
  float R;
- R = (1/R1)+(1/R2)+(1/R3);
- reverse_R = 1 / R;
+ reverse_R= (1/R1)+(1/R2)+(1/R3);
+ R = 1 / R;
 return 0;
 }
