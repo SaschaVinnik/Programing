@@ -31,7 +31,7 @@ int main()
  A8 = A4 * A4;
  A10 = A8 * A2;
  //Задание номер 4
- #define Value1 1984 //Число
+ #define Value1 1746 //Число
  #define system_p 8  //Система исчисления 
  int numeral1;//Еденицы
  int numeral2;//Десятки  
@@ -45,14 +45,17 @@ int main()
  variantD = (numeral1 + numeral2 * system_p + numeral3 * system_p * system_p + numeral4 * system_p * system_p * system_p);
  //Задание номер 5
  #define Value2 327
- int numeral_1;//Еденицы
- int numeral_2;//Десятки
- int numeral_3;//Сотни
- int sravnenie; //Основная задача
+ float numeral_1;//Еденицы
+ float numeral_2;//Десятки
+ float numeral_3;//Сотни
+ float sravnenie; //Основная задача
  numeral_1 = Value2 % 10;
  numeral_2 = (Value2 % 100 ) / 10;
  numeral_3 = Value2 / 100;
- sravnenie = numeral_1 % numeral_3; 
+ sravnenie = (float)numeral_3 / numeral_1;
+ sravnenie *= 100;
+ sravnenie = (int)sravnenie;
+ sravnenie = sravnenie / 100;
  //Задание номер 6 
  #define HR 52//Верхняя граница диапазона
  #define LR 50//Нижняя граница диапазона 
