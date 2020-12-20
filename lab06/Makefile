@@ -8,7 +8,7 @@ clean:
 	rm -rf dist
 prep:
 	mkdir dist
-compile: task1.bin task2.bin task3.bin task4.bin task5.bin 
+compile: task1.bin task2.bin task3.bin task4.bin task5.bin task6.bin
 
 task1.bin: src/task1.c
 	$(CC) $(C_OPTS) $< -o ./dist/$@

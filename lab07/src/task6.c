@@ -1,9 +1,15 @@
 #define N 15
-int main() 
+char FunkFunk(char word[N],char SIZE[N]);
+int main()
+{
+	char word[N] = "Ivanov________\0"; 
+	char SIZE[N] = { }; 
+	FunkFunk(word,SIZE);
+	return 0;
+}
+char FunkFunk(char word[N],char SIZE[N])
 { 
 	char aggregate = '_'; 
-	char SIZE[N]; 
-	char word[N] = "Ivanov________\0"; 
 	int spase_counter = 0; 
 	SIZE[N - 1] = '\0'; 
 	for ( int i = 0; i < N - 1 ;i++){
@@ -19,5 +25,5 @@ int main()
 	for ( int i = N - spase_counter / 2 - 1; i < N - 1;i++){
 		SIZE[i] = aggregate;
 	}
-	return 0;
+	return 	SIZE;
 }
