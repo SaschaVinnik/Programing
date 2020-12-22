@@ -1,8 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ *@file main.c 
+ *@brief Записати масив простих чисел
+ *@avtor Винник Олександр
+ *@date 21-dec-2020
+ *version 1.0
+*/
+
+/**
+ *@param prime_numbers - масив;
+ *@param qantity - кількість простих чисел;
+ *@param SIZE - розмір масива;
+*/
 #define SIZE 30
 #define qantity  30
+
+/**
+ *функція яка запише масив простих чисел
+*/
 int ProstoyMass(int prime_numbers[SIZE]);
+
+/**
+ *функція main: задає масив та передає його в функцію
+*/
 int main()
 {
 	int prime_numbers[SIZE];
