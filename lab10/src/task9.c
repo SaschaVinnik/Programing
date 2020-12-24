@@ -1,9 +1,9 @@
 /**
- *@file main.c .
- *@brief Порахувати слова в тексті.
- *@avtor Винник Олександр.
- *@date 21-dec-2020.
- *version 1.0.
+ *@file main.c 
+ *@brief Порахувати слова в тексті
+ *@avtor Винник Олександр
+ *@date 21-dec-2020
+ *version 1.0
 */
 
 /**

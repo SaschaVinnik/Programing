@@ -1,25 +1,7 @@
-/**
- *@file main.c .
- *@brief Записати число словами.
- *@avtor Винник Олександр.
- *@date 21-dec-2020.
- *version 1.0.
-*/
-
-/**
- *@param number - число яке треба записати;
-*/
-/**
- *функція яка запише число словами
-*/
 char FunFanf(int number, char result[4][20]);
-
-/**
- *функція main: задає число та передає його в функцію
-*/
 int main()
 {
-	int number = 9999;
+	int number = 5759;
 	char result[4][20];
 	result[4][20] = FunFanf(number, result);
 	return 0;

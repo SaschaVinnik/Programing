@@ -1,10 +1,10 @@
 
 /**
- *@file main.c.
+ *@file main.c 
  *@brief Визначити корінь числа.
  *@avtor Винник Олександр.
- *@date 21-dec-2020.
- *version 1.0.
+ *@date 21-dec-2020
+ *version 1.0
 */
 
 /**

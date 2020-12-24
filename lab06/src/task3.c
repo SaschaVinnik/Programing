@@ -1,7 +1,8 @@
 int main()
 {
-    	int number = 5759;
+    	int number = 9999;
     	char result[4][20];
+    	char resultSTR[100];
 	for (int i = 0; i < 20; i++) {
 		result[4][i] = ' ';
 	}
@@ -14,61 +15,18 @@ int main()
  	int Dozens = ( number % 100 ) / 10;
  	int Hundreds = ( number % 1000 ) / 100;
  	int Thousands = number / 1000;
-	for ( int i = 0; i < 9; i++)
+	for (int i = 0; i < 20; i++)
 	{
-		if ( i == Thousands )
+		result[0][i] = thousands[Thousands - 1][i];
+		result[1][i] = hundreds[Hundreds - 1][i];
+		if (Dozens == 1)
 		{
-			for ( int j = 0; j < 20; j++)
-			{
-				result[0][j] = thousands[i - 1][j];
-			}
+			result[2][i] = between9_20[2][i];
 		}
-	}
-	for ( int i = 0; i < 9; i++)
-	{
-                if ( i == Hundreds)
+		else
 		{
-                         for ( int j = 0; j < 20; j++)
-                        {
-                                result[1][j] = hundreds[i - 1][j];
-                        }
-
-                }
-        }
-	for ( int i = 2; i < 10; i++)
-	{
-		for ( int j = 0; j < 10; j++)
-		{
-			if ( i == Dozens)
-			{
-		         	for ( int k = 0; k < 20; k++)
-                        	{
-                                	result[2][k] = dozens[i - 1][k];
-                        	}
-
- 			}
-			if ( j == Units)
-			{
-                                for ( int m = 0; m < 20; m++)
-                                {
-                                        result[3][m] = units[j - 1][m];
-                                }
-
-			}
-		}
-	}
-	if ( Dozens == 1)
-	{
-		for ( int i = 0; i < 10; i++)
-		{
-			if ( i == Units)
-			{
-				for ( int j = 0; j < 20; j++)
-                                {
-                                        result[3][j] = between9_20[i - 1][j];
-                                }
-
-			}
+			result[2][i] = dozens[Dozens - 2][i];
+			result[3][i] = units[Units - 1][i];
 		}
 	}
 	return 0;

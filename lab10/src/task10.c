@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *@file main.c. 
- *@brief Зробити зсув масиву.
- *@avtor Винник Олександр.
- *@date 21-dec-2020.
- *version 1.0.
+ *@file main.c 
+ *@brief Зробити зсув масиву
+ *@avtor Винник Олександр
+ *@date 21-dec-2020
+ *version 1.0
 */
 
 /**

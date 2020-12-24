@@ -1,10 +1,10 @@
 #include <stdlib.h>
 /**
- *@file main.c.
- *@brief Помножити матрицю саму на себе.
- *@avtor Винник Олександр.
- *@date 21-dec-2020.
- *version 1.0.
+ *@file main.c 
+ *@brief Помножити матрицю саму на себе
+ *@avtor Винник Олександр
+ *@date 21-dec-2020
+ *version 1.0
 */
 
 /**
