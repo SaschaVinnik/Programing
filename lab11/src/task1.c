@@ -23,7 +23,9 @@ int main ()
 	{
 		printf("%d", mas3[i]);
 	}
-	
+	free(mas1);
+	free(mas2);
+	free(mas3);
 	return 0;
 }
 void fill_mas(int *mas1,int *mas2,int size1,int size2)
