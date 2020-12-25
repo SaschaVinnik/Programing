@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *@file main.c .
+ *@file task7.c .
  *@brief Записати масив простих чисел.
- *@avtor Винник Олександр.
+ *@autor Винник Олександр.
  *@date 21-dec-2020.
  *version 1.0.
 */

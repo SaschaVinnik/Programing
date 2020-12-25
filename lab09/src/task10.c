@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *@file main.c. 
+ *@file task10.c. 
  *@brief Зробити зсув масиву.
- *@avtor Винник Олександр.
+ *@autor Винник Олександр.
  *@date 21-dec-2020.
  *version 1.0.
 */

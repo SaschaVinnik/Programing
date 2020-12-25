@@ -1,8 +1,8 @@
 
 /**
- *@file main.c.
+ *@file task5.c.
  *@brief Визначити корінь числа.
- *@avtor Винник Олександр.
+ *@autor Винник Олександр.
  *@date 21-dec-2020.
  *version 1.0.
 */

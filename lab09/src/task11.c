@@ -1,8 +1,8 @@
 #include <stdlib.h>
 /**
- *@file main.c.
+ *@file task11.c.
  *@brief Помножити матрицю саму на себе.
- *@avtor Винник Олександр.
+ *@autor Винник Олександр.
  *@date 21-dec-2020.
  *version 1.0.
 */

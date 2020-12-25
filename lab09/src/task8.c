@@ -1,7 +1,7 @@
 /**
- *@file main.c .
+ *@file task8.c .
  *@brief Записати число словами.
- *@avtor Винник Олександр.
+ *@autor Винник Олександр.
  *@date 21-dec-2020.
  *version 1.0.
 */

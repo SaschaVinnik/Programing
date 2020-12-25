@@ -4,7 +4,7 @@ int Funk(int numbers,...);
 int main()
 {
 	int result;
-	result = Funk(SIZE,4,5,3,8,7,224,13,9,2,6,34);		
+	result = Funk(SIZE,4,5,6,8,7,224,13,9,2,6,34);		
 	return 0;
 }
 int Funk(int numbers,...)
