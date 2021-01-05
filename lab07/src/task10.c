@@ -5,6 +5,7 @@ int FunkShift(int array[N][N]);
 int main()
 {
 	int array[N][N] = {0};
+	int result[N][N];
 	for (int i = 0; i < N; i ++)
 	{
 		for (int j = 0; j < N; j ++)
@@ -17,12 +18,11 @@ int main()
 }
 int FunkShift (int array[N][N])
 {
-	int result[N][N] = {0};
+	int result[N][N];
 	int reserve = array[0][0];	
 	for (int i = 0; i < N * N; i++) 
 	{
 		result[0][i] = array[0][i + 1];
 	}
 	result[N - 1][N - 1] = reserve;
-	return result;
 }

@@ -1,7 +1,6 @@
-sargets = task1.bin task2.bin task3.bin task4.bin task5.bin task6.bin task7.bin task8.bin task9.bin task10.bin task11.bin  task12.bin 
-
+sargets = task1.bin task2.bin task3.bin task4.bin task5.bin task22.bin task23.bin
 CC = gcc
-C_OPTS = -std=gnu11 -g -Wall -Wextra  -Wformat-security -Wfloat-equal -Wshadow -Wconversion -Wlogical-not-parentheses -Wnull-dereference 
+C_OPTS = -std=gnu11 -g -Wall -Wextra  -Wformat-security -Wfloat-equal -Wshadow -Wconversion -Wlogical-not-parentheses -Wnull-dereference -I./src src/lib.c 
 
 all: clean prep compile run
 
@@ -11,40 +10,16 @@ prep:
 	mkdir dist
 format:
 	doxygen
-compile: task1.bin task2.bin task3.bin task4.bin task5.bin task6.bin task7.bin task8.bin task9.bin task10.bin task11.bin  task12.bin 
+compile: main.bin
 
-task1.bin: src/task1.c
+main.bin: src/main.c
 	$(CC) $(C_OPTS) $< -o ./dist/$@
-task2.bin: src/task2.c
-	$(CC) $(C_OPTS) $< -o ./dist/$@
-task3.bin: src/task3.c
-	$(CC) $(C_OPTS) $< -o ./dist/$@
-task4.bin: src/task4.c
-	$(CC) $(C_OPTS) $< -o ./dist/$@
-task5.bin: src/task5.c
-	$(CC) $(C_OPTS) $< -o ./dist/$@
-task6.bin: src/task6.c
-	$(CC) $(C_OPTS) $< -o ./dist/$@
-task7.bin: src/task7.c
-	$(CC) $(C_OPTS) $< -o ./dist/$@
-task8.bin: src/task8.c
-	$(CC) $(C_OPTS) $< -o ./dist/$@
-task8.bin: src/task8.c
-	$(CC) $(C_OPTS) $< -o ./dist/$@
-task9.bin: src/task9.c
-	$(CC) $(C_OPTS) $< -o ./dist/$@
-task10.bin: src/task10.c
-	$(CC) $(C_OPTS) $< -o ./dist/$@
-task11.bin: src/task11.c
-	$(CC) $(C_OPTS) $< -o ./dist/$@
-task12.bin: src/task12.c
-	$(CC) $(C_OPTS) $< -o ./dist/$@
-
 
 
 run: clean prep compile
-	./dist/task.bin
- 
+	./dist/main.bin
+doxygen:
+	doxygen Doxyfile
 format: #TODO
 
 tidy: # TODO
