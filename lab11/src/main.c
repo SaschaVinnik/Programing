@@ -1,7 +1,7 @@
 #include <malloc.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <lib.h>
+#include "lib.h"
 /**
  *@file main.c. 
  *@brief Скласти масив та упорядкувати його за зростанням .  
@@ -21,20 +21,6 @@
 
 #define N 5
 #define M 3
-/**
- *Функція яка заповнює 1 та 2 масив віпадковими числами від 0 до 10
- */
-void fill_mas(int *mas1,int *mas2,int size1,int size2);
-
-/**
- *Функція яка заповнює результуючий масив
- */
-void fill_mas3(int *mas1,int *mas2,int size1,int size2, int *mas3);
-
-/**
- *Функція яка сортурує результуючий масив
- */
-void sort_mas3(int size1,int size2, int *mas3);
 
 /**
  *Функція main : задає розміри масивів та викликає функції

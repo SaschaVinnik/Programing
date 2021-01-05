@@ -1,4 +1,4 @@
-#include <string.h>
+#include "lib.h"
 /**
  *@file main.c. 
  *@brief Скласти масив та упорядкувати його за зростанням .  
@@ -16,36 +16,20 @@
 #define STR "Then she usually reads a book or just watches TV . What a big building it is! What is this thing . I am hungry ?"
 
 /**
- *Функція яка рахує окличні речення
- */
-int FunkVOZKL(char * buf, int count1);
-
-/**
- *Функція яка рахує питальні речення
- */
-int  FunkTGHK(char * buf, int count2);
-
-/**
- *Функція яка рахує розповідні речення
- */
-int FunkVOZ(char * buf, int count3);
-
-/**
  *Функція main: задає строку та лічильнтки і передає їх у функцію
  */
-int main()
+int main() 
 {
 	int str_lenght = strlen(STR);
-	char * buf = malloc((str_lenght + 1) * sizeof(char));
-	strcpy(buf, STR);
-	//char sep2[10] = "?";
-	//char sep3[10] = ".";
-	int count1;
-	int count2;
-	int count3;
-	char sep[3] = "!.?";	
-	count1 = FunkVOZKL(buf, count1);
-	count2 = FunkTGHK(buf, count2);
-	count3 = FunkVOZ(buf, count3);
-	return 0;
+	char sen[str_lenght];
+	strcpy(sen, STR);
+	char* buf = sen;
+	int count1 = 0;
+	int count2 = 0;
+	int count3 = 0;
+	count1 = FunkVOZKL(buf, count1); 
+	count2 = FunkTCK(buf, count2);
+	count3 = FunkVOP(buf, count3);
+	
+	return 0; 
 }
