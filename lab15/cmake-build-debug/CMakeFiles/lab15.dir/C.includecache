@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sascha/Programing/lab15/lib.c
+lib.h
+/home/sascha/Programing/lab15/lib.h
+
+/home/sascha/Programing/lab15/lib.h
+stdio.h
+-
+stdbool.h
+-
+string.h
+-
+stdlib.h
+-
+errno.h
+-
+
