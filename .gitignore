@@ -1,1 +1,13 @@
 dist/
+lab12/.idea/
+lab12/cmake-build-debug/
+lab14/.idea/
+lab15/.idea/
+lab15/cmake-build-debug/
+lab15/CMakeLists.txt
+lab18/.idea/
+lab18/CMakeLists.txt
+lab18/cmake-build-debug/
+lab19/.idea/
+lab19/CMakeLists.txt
+lab19/cmake-build-debug/
