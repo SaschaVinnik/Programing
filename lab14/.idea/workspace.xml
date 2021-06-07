@@ -22,23 +22,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fc3c75d-6b54-4ad6-8a42-0dbef3f0155f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab18/lib.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab18/lib.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../13_2/Doxyfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../13_2/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../13_2/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../13_2/doc/assest/FankTCK.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../13_2/doc/assest/FankVosk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../13_2/doc/assest/FanrVop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../13_2/doc/assest/lab13_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../13_2/doc/Лабораторна№13.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../13_2/doc/Лабораторна№13.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../13_2/src/lib.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../13_2/src/lib.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../13_2/src/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab12/getc/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../lab12/getc/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab12/printf/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../lab12/printf/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab12/write/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../lab12/write/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab18/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../lab18/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +84,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lab12/getc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lab15" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -195,6 +183,7 @@
       <workItem from="1621955213949" duration="1255000" />
       <workItem from="1621957397524" duration="188000" />
       <workItem from="1621958448942" duration="25000" />
+      <workItem from="1621967387937" duration="136000" />
     </task>
     <servers />
   </component>

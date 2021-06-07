@@ -14,7 +14,7 @@ int main()
     int position;
     printf("Введите позицию, после которой вставить строку: ");
     scanf("%i", &position);
-    char* result_insert = ElementInsertion(text1, passed_text, position);
+    char* result_insert = element_insert(text1, passed_text, position);
     printf("Результат добавления: %s\n\n", result_insert);
 
     int start_pos;
@@ -25,7 +25,7 @@ int main()
     scanf("%d", &start_pos);
     printf("Введите конечную позицию для удаления: ");
     scanf("%d", &end_pos);
-    char* result_deleting = ElementDeleting(text2, start_pos, end_pos);
+    char* result_deleting = element_edelet(text2, start_pos, end_pos);
     printf("Результат удаления: %s\n\n", result_deleting);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

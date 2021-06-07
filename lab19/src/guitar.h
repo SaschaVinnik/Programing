@@ -11,6 +11,7 @@
 
 
 
+
 #define QUANTITY_STRUCT 5
 
 enum Materials
@@ -39,23 +40,20 @@ enum Guitar_size
 
 
 
-struct Guitar
+struct ListGuitar
 {
     bool pickup;//звукознимач
     char firm[10];
     int guitar_tunes;//количество ладов
     struct gitar_strings strings;
     enum Guitar_size guitar_size;
+    struct ListGuitar *next;
+    struct ListGuitar *prev;
 
 };
 
 
-void read_from_textfile(struct Guitar ** name);
-void random_guitar_tunes(struct Guitar **name);
-//void Sort_struct_by_criterion(struct Guitar **name, char criterion[10], int method);
-//void Print_in_console(struct Guitar **name);
-//void Print_in_file(struct Guitar **name);
-//void collection_method_number_1(struct Guitar **name);
+
 
 
 

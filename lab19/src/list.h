@@ -8,20 +8,6 @@
 
 
 
-struct ListGuitar
-{
-
-    bool pickup;//звукознимач
-    char firm[10];
-    int guitar_tunes;
-    struct gitar_strings strings;
-    enum Guitar_size guitar_size;
-    struct  ListGuitar *next;
-    struct  ListGuitar *prev;
-
-};
-
-
 struct List
 {
     struct  ListGuitar *head;

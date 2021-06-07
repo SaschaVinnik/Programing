@@ -58,10 +58,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/151/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/152/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/151/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/152/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -78,7 +78,7 @@ CMAKE_BINARY_DIR = /home/sascha/Programing/lab19/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/151/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/152/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -89,7 +89,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/151/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/152/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -130,17 +130,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lab19
+# Target rules for targets named lab19_test
 
 # Build rule for target.
-lab19: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab19
-.PHONY : lab19
+lab19_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab19_test
+.PHONY : lab19_test
 
 # fast build rule for target.
-lab19/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19.dir/build.make CMakeFiles/lab19.dir/build
-.PHONY : lab19/fast
+lab19_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19_test.dir/build.make CMakeFiles/lab19_test.dir/build
+.PHONY : lab19_test/fast
+
+#=============================================================================
+# Target rules for targets named lab19_main
+
+# Build rule for target.
+lab19_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab19_main
+.PHONY : lab19_main
+
+# fast build rule for target.
+lab19_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19_main.dir/build.make CMakeFiles/lab19_main.dir/build
+.PHONY : lab19_main/fast
 
 src/guitar.o: src/guitar.c.o
 
@@ -148,7 +161,8 @@ src/guitar.o: src/guitar.c.o
 
 # target to build an object file
 src/guitar.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19.dir/build.make CMakeFiles/lab19.dir/src/guitar.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19_test.dir/build.make CMakeFiles/lab19_test.dir/src/guitar.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19_main.dir/build.make CMakeFiles/lab19_main.dir/src/guitar.c.o
 .PHONY : src/guitar.c.o
 
 src/guitar.i: src/guitar.c.i
@@ -157,7 +171,8 @@ src/guitar.i: src/guitar.c.i
 
 # target to preprocess a source file
 src/guitar.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19.dir/build.make CMakeFiles/lab19.dir/src/guitar.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19_test.dir/build.make CMakeFiles/lab19_test.dir/src/guitar.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19_main.dir/build.make CMakeFiles/lab19_main.dir/src/guitar.c.i
 .PHONY : src/guitar.c.i
 
 src/guitar.s: src/guitar.c.s
@@ -166,7 +181,8 @@ src/guitar.s: src/guitar.c.s
 
 # target to generate assembly for a file
 src/guitar.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19.dir/build.make CMakeFiles/lab19.dir/src/guitar.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19_test.dir/build.make CMakeFiles/lab19_test.dir/src/guitar.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19_main.dir/build.make CMakeFiles/lab19_main.dir/src/guitar.c.s
 .PHONY : src/guitar.c.s
 
 src/list.o: src/list.c.o
@@ -175,7 +191,8 @@ src/list.o: src/list.c.o
 
 # target to build an object file
 src/list.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19.dir/build.make CMakeFiles/lab19.dir/src/list.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19_test.dir/build.make CMakeFiles/lab19_test.dir/src/list.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19_main.dir/build.make CMakeFiles/lab19_main.dir/src/list.c.o
 .PHONY : src/list.c.o
 
 src/list.i: src/list.c.i
@@ -184,7 +201,8 @@ src/list.i: src/list.c.i
 
 # target to preprocess a source file
 src/list.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19.dir/build.make CMakeFiles/lab19.dir/src/list.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19_test.dir/build.make CMakeFiles/lab19_test.dir/src/list.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19_main.dir/build.make CMakeFiles/lab19_main.dir/src/list.c.i
 .PHONY : src/list.c.i
 
 src/list.s: src/list.c.s
@@ -193,7 +211,8 @@ src/list.s: src/list.c.s
 
 # target to generate assembly for a file
 src/list.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19.dir/build.make CMakeFiles/lab19.dir/src/list.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19_test.dir/build.make CMakeFiles/lab19_test.dir/src/list.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19_main.dir/build.make CMakeFiles/lab19_main.dir/src/list.c.s
 .PHONY : src/list.c.s
 
 src/main.o: src/main.c.o
@@ -202,7 +221,7 @@ src/main.o: src/main.c.o
 
 # target to build an object file
 src/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19.dir/build.make CMakeFiles/lab19.dir/src/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19_main.dir/build.make CMakeFiles/lab19_main.dir/src/main.c.o
 .PHONY : src/main.c.o
 
 src/main.i: src/main.c.i
@@ -211,7 +230,7 @@ src/main.i: src/main.c.i
 
 # target to preprocess a source file
 src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19.dir/build.make CMakeFiles/lab19.dir/src/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19_main.dir/build.make CMakeFiles/lab19_main.dir/src/main.c.i
 .PHONY : src/main.c.i
 
 src/main.s: src/main.c.s
@@ -220,8 +239,35 @@ src/main.s: src/main.c.s
 
 # target to generate assembly for a file
 src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19.dir/build.make CMakeFiles/lab19.dir/src/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19_main.dir/build.make CMakeFiles/lab19_main.dir/src/main.c.s
 .PHONY : src/main.c.s
+
+test/test.o: test/test.c.o
+
+.PHONY : test/test.o
+
+# target to build an object file
+test/test.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19_test.dir/build.make CMakeFiles/lab19_test.dir/test/test.c.o
+.PHONY : test/test.c.o
+
+test/test.i: test/test.c.i
+
+.PHONY : test/test.i
+
+# target to preprocess a source file
+test/test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19_test.dir/build.make CMakeFiles/lab19_test.dir/test/test.c.i
+.PHONY : test/test.c.i
+
+test/test.s: test/test.c.s
+
+.PHONY : test/test.s
+
+# target to generate assembly for a file
+test/test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab19_test.dir/build.make CMakeFiles/lab19_test.dir/test/test.c.s
+.PHONY : test/test.c.s
 
 # Help Target
 help:
@@ -231,7 +277,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... lab19"
+	@echo "... lab19_main"
+	@echo "... lab19_test"
 	@echo "... src/guitar.o"
 	@echo "... src/guitar.i"
 	@echo "... src/guitar.s"
@@ -241,6 +288,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... test/test.o"
+	@echo "... test/test.i"
+	@echo "... test/test.s"
 .PHONY : help
 
 

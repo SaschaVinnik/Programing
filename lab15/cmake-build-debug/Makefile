@@ -58,10 +58,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/151/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/152/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/151/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/152/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -78,7 +78,7 @@ CMAKE_BINARY_DIR = /home/sascha/Programing/lab15/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/151/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/152/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -89,7 +89,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/151/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/152/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -130,71 +130,114 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lab15
+# Target rules for targets named lab15_test
 
 # Build rule for target.
-lab15: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab15
-.PHONY : lab15
+lab15_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab15_test
+.PHONY : lab15_test
 
 # fast build rule for target.
-lab15/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab15.dir/build.make CMakeFiles/lab15.dir/build
-.PHONY : lab15/fast
+lab15_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab15_test.dir/build.make CMakeFiles/lab15_test.dir/build
+.PHONY : lab15_test/fast
 
-lib.o: lib.c.o
+#=============================================================================
+# Target rules for targets named lab15_main
 
-.PHONY : lib.o
+# Build rule for target.
+lab15_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab15_main
+.PHONY : lab15_main
 
-# target to build an object file
-lib.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab15.dir/build.make CMakeFiles/lab15.dir/lib.c.o
-.PHONY : lib.c.o
+# fast build rule for target.
+lab15_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab15_main.dir/build.make CMakeFiles/lab15_main.dir/build
+.PHONY : lab15_main/fast
 
-lib.i: lib.c.i
+src/lib.o: src/lib.c.o
 
-.PHONY : lib.i
-
-# target to preprocess a source file
-lib.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab15.dir/build.make CMakeFiles/lab15.dir/lib.c.i
-.PHONY : lib.c.i
-
-lib.s: lib.c.s
-
-.PHONY : lib.s
-
-# target to generate assembly for a file
-lib.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab15.dir/build.make CMakeFiles/lab15.dir/lib.c.s
-.PHONY : lib.c.s
-
-main.o: main.c.o
-
-.PHONY : main.o
+.PHONY : src/lib.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab15.dir/build.make CMakeFiles/lab15.dir/main.c.o
-.PHONY : main.c.o
+src/lib.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab15_test.dir/build.make CMakeFiles/lab15_test.dir/src/lib.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab15_main.dir/build.make CMakeFiles/lab15_main.dir/src/lib.c.o
+.PHONY : src/lib.c.o
 
-main.i: main.c.i
+src/lib.i: src/lib.c.i
 
-.PHONY : main.i
+.PHONY : src/lib.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab15.dir/build.make CMakeFiles/lab15.dir/main.c.i
-.PHONY : main.c.i
+src/lib.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab15_test.dir/build.make CMakeFiles/lab15_test.dir/src/lib.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab15_main.dir/build.make CMakeFiles/lab15_main.dir/src/lib.c.i
+.PHONY : src/lib.c.i
 
-main.s: main.c.s
+src/lib.s: src/lib.c.s
 
-.PHONY : main.s
+.PHONY : src/lib.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab15.dir/build.make CMakeFiles/lab15.dir/main.c.s
-.PHONY : main.c.s
+src/lib.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab15_test.dir/build.make CMakeFiles/lab15_test.dir/src/lib.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab15_main.dir/build.make CMakeFiles/lab15_main.dir/src/lib.c.s
+.PHONY : src/lib.c.s
+
+src/main.o: src/main.c.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab15_main.dir/build.make CMakeFiles/lab15_main.dir/src/main.c.o
+.PHONY : src/main.c.o
+
+src/main.i: src/main.c.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab15_main.dir/build.make CMakeFiles/lab15_main.dir/src/main.c.i
+.PHONY : src/main.c.i
+
+src/main.s: src/main.c.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab15_main.dir/build.make CMakeFiles/lab15_main.dir/src/main.c.s
+.PHONY : src/main.c.s
+
+test/test.o: test/test.c.o
+
+.PHONY : test/test.o
+
+# target to build an object file
+test/test.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab15_test.dir/build.make CMakeFiles/lab15_test.dir/test/test.c.o
+.PHONY : test/test.c.o
+
+test/test.i: test/test.c.i
+
+.PHONY : test/test.i
+
+# target to preprocess a source file
+test/test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab15_test.dir/build.make CMakeFiles/lab15_test.dir/test/test.c.i
+.PHONY : test/test.c.i
+
+test/test.s: test/test.c.s
+
+.PHONY : test/test.s
+
+# target to generate assembly for a file
+test/test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab15_test.dir/build.make CMakeFiles/lab15_test.dir/test/test.c.s
+.PHONY : test/test.c.s
 
 # Help Target
 help:
@@ -204,13 +247,17 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... lab15"
-	@echo "... lib.o"
-	@echo "... lib.i"
-	@echo "... lib.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... lab15_main"
+	@echo "... lab15_test"
+	@echo "... src/lib.o"
+	@echo "... src/lib.i"
+	@echo "... src/lib.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... test/test.o"
+	@echo "... test/test.i"
+	@echo "... test/test.s"
 .PHONY : help
 
 

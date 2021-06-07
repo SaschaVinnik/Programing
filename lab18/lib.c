@@ -1,7 +1,7 @@
 #include "lib.h"
 
 
-char *ElementInsertion(char * text, char * pasted_text, int position){
+char *element_insert(char * text, char * pasted_text, int position){
     if(position < 0){
         position = 0;
     }
@@ -16,7 +16,7 @@ char *ElementInsertion(char * text, char * pasted_text, int position){
     return new_text;
 }
 
-char * ElementDeleting(char * text, int start_pos, int end_pos){
+char * element_edelet(char * text, int start_pos, int end_pos){
     if(start_pos < 0 && end_pos > 0){
         start_pos = 0;
     }

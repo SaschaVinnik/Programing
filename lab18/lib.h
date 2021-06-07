@@ -52,8 +52,8 @@ struct Guitar
 
 
 
-char *ElementInsertion(char * text, char * pasted_text, int position);
-char *ElementDeleting(char * text, int start_pos, int end_pos);
+char *element_insert(char * text, char * pasted_text, int position);
+char *element_edelet(char * text, int start_pos, int end_pos);
 
 void read_from_textfile(struct Guitar **guitar);
 void random_guitar_tunes(struct Guitar **guitar);

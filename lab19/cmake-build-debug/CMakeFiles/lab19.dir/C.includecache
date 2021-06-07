@@ -6,3 +6,23 @@
 
 #IncludeRegexTransform: 
 
+/home/sascha/Programing/lab19/src/guitar.h
+stdio.h
+-
+stdbool.h
+-
+string.h
+-
+stdlib.h
+-
+errno.h
+-
+
+/home/sascha/Programing/lab19/src/list.h
+guitar.h
+/home/sascha/Programing/lab19/src/guitar.h
+
+/home/sascha/Programing/lab19/src/main.c
+list.h
+/home/sascha/Programing/lab19/src/list.h
+

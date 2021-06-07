@@ -3,6 +3,7 @@
 
 CMakeFiles/lab19.dir/src/guitar.c.o: ../src/guitar.c
 CMakeFiles/lab19.dir/src/guitar.c.o: ../src/guitar.h
+CMakeFiles/lab19.dir/src/guitar.c.o: ../src/list.h
 
 CMakeFiles/lab19.dir/src/list.c.o: ../src/guitar.h
 CMakeFiles/lab19.dir/src/list.c.o: ../src/list.c

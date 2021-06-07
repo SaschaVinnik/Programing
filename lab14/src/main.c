@@ -7,7 +7,7 @@ int main()
     print_size_of_directory();
     printf("Работа с файлом\n");
 
-    lab12();
+
 
 
     return 0;
