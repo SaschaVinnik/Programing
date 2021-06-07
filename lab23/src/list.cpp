@@ -23,7 +23,7 @@ void List::addGuitar(Guitar& guitar)
      cout << Count;
     for (int i = 0; i < this->Count; ++i)
     {
-        //temp[i] = new Backpack;
+     
         temp[i] = this->guitar[i];
     }
     temp[Count] = &guitar;

@@ -89,7 +89,7 @@ Guitar& List::Colektion_Guitar() const
     }
     if (index == -1)
     {
-        cout << "ERROR: German city backpack not found" << endl;
+        cout << "Нужная гитара не найдена" << endl;
         return getGuitar(0);
     } else
     {
