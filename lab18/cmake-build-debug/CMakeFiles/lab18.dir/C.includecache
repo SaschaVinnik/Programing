@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/sascha/Programing/lab18/lib.c
+lib.h
+/home/sascha/Programing/lab18/lib.h
+
 /home/sascha/Programing/lab18/lib.h
 stdio.h
 -

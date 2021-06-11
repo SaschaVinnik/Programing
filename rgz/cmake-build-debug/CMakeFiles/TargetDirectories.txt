@@ -1,3 +1,0 @@
-/home/sascha/Programing/rgz/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/sascha/Programing/rgz/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/sascha/Programing/rgz/cmake-build-debug/CMakeFiles/rgz.dir

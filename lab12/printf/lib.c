@@ -56,7 +56,7 @@ void print_mas3(int* mas3, int size3)
 {
     for (int i = 0; i < size3; i++)
     {
-        printf("%d\n", mas3[i]);
+        printf(" %d", mas3[i]);
     }
 
 }

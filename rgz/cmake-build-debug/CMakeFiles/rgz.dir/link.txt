@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/rgz.dir/src/guitar.cpp.o CMakeFiles/rgz.dir/src/list.cpp.o CMakeFiles/rgz.dir/src/main.cpp.o CMakeFiles/rgz.dir/src/menu.cpp.o -o rgz 

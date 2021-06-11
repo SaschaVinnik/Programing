@@ -18,11 +18,11 @@ iostream
 fstream
 -
 
+/home/sascha/Programing/lab24/src/list.cpp
+list.h
+/home/sascha/Programing/lab24/src/list.h
+
 /home/sascha/Programing/lab24/src/list.h
 guitar.h
 /home/sascha/Programing/lab24/src/guitar.h
-
-/home/sascha/Programing/lab24/test/test.cpp
-../src/list.h
-/home/sascha/Programing/lab24/src/list.h
 

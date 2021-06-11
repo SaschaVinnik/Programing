@@ -60,8 +60,6 @@ public:
 
 };
 
-
-
 //         Наследник 2
 
 class ListElectricGuitar

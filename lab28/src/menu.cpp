@@ -27,7 +27,7 @@ int Menu(){
 
 void Exersise::CallingSelectedFunction(int number){
     int i1, i2;
-    switch (number) {
+    switch (number) { ///home/sascha/Programing/lab28/result.txt
         case 1:
             cout << " > Введите входные индексы массивов: ";
             cin >> i1 >> i2;
